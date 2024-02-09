@@ -51,7 +51,7 @@ export function App() {
     <Section>
       <ContactForm hendleSubmit={hendleSubmit} />
       {isLoading && !error && (
-        <p
+        <div
           style={{
             position: 'absolute',
             top: '100px',
@@ -59,7 +59,7 @@ export function App() {
           }}
         >
           <Loader />
-        </p>
+        </div>
       )}
       <h2>Contacts</h2>
 
